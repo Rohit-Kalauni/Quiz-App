@@ -44,13 +44,13 @@ const Quiz = () => {
     }
   };
 
-  const reset = ()=>{
+  const reset = () => {
     setIndex(0);
-    setQuestion(data[0])
-    setScore(0)
-    setLock(false)
-    setResult(false)
-  }
+    setQuestion(data[0]);
+    setScore(0);
+    setLock(false);
+    setResult(false);
+  };
 
   return (
     <div className="container">
@@ -59,8 +59,10 @@ const Quiz = () => {
       <hr />
       {result ? (
         <>
-         <h2>You Scored {score} out of {data.length}</h2>
-      <button onClick={reset}>Reset</button>
+          <h2>
+            You Scored {score} out of {data.length}
+          </h2>
+          <button onClick={reset}>Reset</button>
         </>
       ) : (
         <>
@@ -107,8 +109,6 @@ const Quiz = () => {
           </div>
         </>
       )}
-  
-      
     </div>
   );
 };
